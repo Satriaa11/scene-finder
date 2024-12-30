@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene Finder</title>
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container p-4 border m-2 rounded-md justify-center">
+        <h1 class="mb-1 text-2xl font-bold">Anime Scene Finder</h1>
+        <label class="block mb-2">
+            <input class="rounded-md border-solid border border-sky-400 p-2 w-full"
+                   id="imageUrl" name="imageUrl" placeholder="Enter Image Url" type="text">
+        </label>
+        <button id="search" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Find Scene</button>
+        <div id="result" class="mt-4"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/types.ts"></script>
+    <script type="module" src="/src/api.ts"></script>
+</body>
+</html>
